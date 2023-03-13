@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 130px;
+    background: grey;
+    border: 1px solid black;
+    clear: both;
+}
+
+section {
+    height: 200px;
+    background: grey;
+    border: 1px solid black;
+}
+
+section.bottomSection {
+    height: 300px;
+    width: 66.6666%;
+    background: grey;
+    border: 1px solid black;
+    float: right;
+}
+
+aside {
+    height: 300px;
+    width: 33.3333%;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+}

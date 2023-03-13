@@ -1,0 +1,539 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header */
+header {
+  width: 100%;
+  height: 700px;
+  background-image: url("../Foodbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header *{
+  text-decoration: none;
+  list-style: none;
+  float: left;
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav {
+  width: 100%;
+  padding-left: 45%;
+}
+
+ul {
+  width: 100%;
+}
+
+header li,
+header nav a {
+  margin-left: 5%;
+  width: max-content;
+}
+
+
+header h1 {
+  font-size: 8.5rem;
+  padding: 50px 90px 0 90px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+header form{
+  width: 30%;
+  height: 50px;
+  margin-left: 90px;
+  padding-right: -80px;
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+}
+
+header form + a {
+  border: 5px solid orange;
+  border-radius: 5%;
+  background: orange;
+  padding: 12px 2%;
+  margin-left: -3px;
+  color: white;
+}
+
+header a + ul li a {
+  width: 50px;
+}
+
+header a + ul a i {
+  margin-right: 5px;
+  color: orange;
+}
+
+/* Main */
+
+main {
+  height: 950px;
+  background: url(../brooke-lark-of0pMsWApZE-unsplash.jpeg) -600px, linear-gradient(to bottom, #fbfbfb 0%, #eaeceb 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px;
+}
+
+main span {
+  color: orange;
+  font-size: 2rem;
+  margin-left: 50%;
+}
+
+main h2 {
+  font-size: 6rem;
+  margin-left: 50%;
+  text-transform: capitalize;
+}
+
+main p {
+  font-size: 2rem;
+  color: rgb(111, 111, 111);
+  width: 45%;
+  text-align: left;
+  margin-left: 50%;
+  padding-bottom: 50px;
+}
+
+main p + a {
+  background: darkorange;
+  border-radius: 3%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 15px 15px;
+  margin-left: 50%;
+  margin-top: 20px;
+}
+
+main a + a {
+  background: orange;
+  border-radius: 3%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 15px 10px;
+  margin-left: -5px;
+  margin-top: 90px;
+}
+
+/* SlideSection */
+
+.slideShow {
+  height: 650px;
+  padding: 50px;
+  background: rgb(224, 224, 224);
+}
+
+.slideShow span {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 2rem;
+  margin-left: 42%;
+}
+
+.slideShow h3{
+  text-transform: capitalize;
+  font-size: 6rem;
+  margin-left: 30%;
+}
+
+.slideShow nav {
+  height: 70px;
+  padding-left: 15%;
+}
+
+.slideShow ul * {
+  text-decoration: none;
+  list-style: none;
+  float: left;
+  color: black;
+  font-size: 2.5rem;
+  width: 20%;
+  height: 70px;
+}
+
+.slideShow img {
+  width: 100%;
+  margin-left: 4%;
+  float: left;
+  background: center / cover no-repeat;
+  height: 100px;
+}
+
+.slideShow a:hover {
+  color: orange;
+}
+
+/* Flip Card */
+
+.card-container {
+  cursor: pointer;
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 20%;
+  float: left;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card div.first {
+  background: url(../brooke-lark-wMzx2nBdeng-unsplash.jpeg) center / cover no-repeat;
+}
+
+.card div.second {
+  background: url(../brooke-lark-fANEvguCIXE-unsplash.jpeg) center / cover no-repeat;
+}
+
+.card div.third {
+  background: url(../brooke-lark-9ukDOeEEs8w-unsplash.jpeg) center / cover no-repeat;
+}
+
+.card div.fourth {
+  background: url(../brooke-lark-4J059aGa5s4-unsplash.jpeg) center / cover no-repeat;
+}
+
+.card div.fifth {
+  background: url(../brooke-lark-of0pMsWApZE-unsplash.jpeg) center / cover no-repeat;
+}
+
+.card .back {
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+div.side.back span{
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 0 10px 0 5px;
+  height: 0;
+}
+
+div.side.back a{
+  color: white;
+  font-size: 2rem;
+  margin: 0 10px 0 20px;
+  padding: 5px 10px;
+  border-radius: 5%;
+  text-decoration: none;
+  background: orange;
+}
+
+/* TimeSection */
+
+section.Time {
+  height: 900px;
+  padding: 50px;
+}
+
+.Time div {
+  width: 30%;
+  height: 45px;
+  margin-left: 30%;
+}
+
+.Time span {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 2rem;
+  margin-left: 47%;
+  text-align: center;
+}
+
+.Time div span:first-of-type {
+  text-transform: capitalize;
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 60%;
+  text-align: center;
+  width: 100%;
+}
+
+.Time span + span {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 44%;
+  text-align: center;
+  width: 100%;
+}
+
+.Time h3 {
+  text-transform: capitalize;
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.Time p {
+  color: black;
+  font-size: 3rem;
+  text-align: left;
+  width: 40%;
+  float: left;
+  margin-left: 10%;
+}
+
+.Time div:last-of-type {
+  height: 500px;
+  width: 60%;
+  background: url(../foodonbook.jpeg) bottom / cover no-repeat;
+  float: left;
+  margin-left: 17%;
+}
+
+/* ReviewSection */
+
+.endSection {
+  height: 800px;
+  background: rgb(224, 224, 224);
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.endSection > span {
+  color: orange;
+  font-size: 2.3rem;
+  margin-left: 45%;
+}
+
+.endSection h3 {
+  font-size: 7rem;
+  margin: 10% 30%;
+  width: 70%;
+}
+
+.endSection div {
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.endSection div span:first-of-type {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.endSection div span {
+  font-size: 2rem;
+  color: rgb(186, 186, 186);
+
+}
+
+.endSection div span:last-of-type {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+.endSection p {
+  font-size: 2rem;
+  width: 70%;
+  margin-left: 17%;
+  text-align: center;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+
+
+  /* HEADER */
+
+  header nav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 700px;
+    background-image: url("../Foodbg.jpeg") cover no-repeat;
+    background-position: 10% 10%;
+  }
+
+  header ul {
+    margin-left: 8%;
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 5rem;
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 30%;
+  }
+
+  /* MAIN */
+
+  main {
+    height: 900px;
+  }
+
+  main span {
+    margin-left: 10%;
+  }
+
+  main h2{
+    font-size: 5rem;
+    margin-left: 10%;
+  }
+
+  main p {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.6rem;
+  }
+
+  main p + a {
+    padding: 9px 7px;
+    margin-left: 10%;
+  }
+
+  main a + a {
+    padding: 9.4px 10px
+  }
+
+
+  /* SLIDESHOW */
+
+  .slideShow {
+    height: 1800px;
+  }
+
+  .slideShow span {
+    margin-left: 10%;
+  }
+
+  .slideShow h3 {
+    margin-left: 10%;
+    font-size: 5rem;
+  }
+
+  .slideShow nav *{
+    font-size: 2rem;
+    padding-left: 0%;
+  }
+
+  .slideShow nav {
+    margin-left: 1%;
+    padding-left: 1%;
+    width: 80%;
+  }
+
+  .slideShow nav ul *{
+    margin-left: 10%;
+    width: fit-content;
+    height: 30px;
+
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+
+  /* InfoSection */
+
+  .Time span {
+    margin-left: 10%;
+  }
+
+  .Time h3 {
+    margin-left: 0%;
+  }
+
+  .Time div {
+    margin-left: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .Time div:last-of-type {
+    height: 350px;
+  }
+
+  .Time p {
+    font-size: 2rem;
+    text-align: left;
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .Time span + span {
+    font-size: 1.5rem;
+  }
+
+  /* EndSection */
+
+  .endSection h3 {
+    font-size: 5rem;
+    margin: 10% 10%;
+    width: max-content;
+  }
+
+  
+
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

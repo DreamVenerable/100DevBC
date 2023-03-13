@@ -1,0 +1,545 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  height: 80px;
+  color: black;
+  background-color: white;
+  float: left;
+  width: 100%;
+}
+
+header nav *{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  float: left;
+  padding: 0 2%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-top: 15px;
+
+}
+
+header > a:first-of-type {
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+  text-transform: capitalize;
+  float: left;
+  padding: 20px 80px;
+}
+
+header > a:last-of-type {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  text-transform: uppercase;
+  float: left;
+  padding-top: 30px;
+}
+
+header > i.fa-solid {
+  display: none;
+}
+
+
+/* MAIN */
+
+main {
+  background: url(../averie-woodard.jpeg) center / cover no-repeat;
+  height: 1100px;
+  float: left;
+  width: 100%;
+}
+
+main h1 {
+  padding: 200px 0 0 150px;
+  font-size: 9rem;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+main p {
+  color: white;
+  font-size: 2.3rem;
+  margin: 20px 0 35px 150px;
+  text-transform: uppercase;
+}
+
+main > a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  margin: 10px 0 0 150px;
+  text-transform: uppercase;
+}
+
+main section {
+  height: 350px;
+  width: 250px;
+  background: black;
+  margin: 150px 0 0 145px;
+  color: white;
+}
+
+main section span {
+  display: inline-block;
+  border-left: 4px solid white;
+  font-size: 2rem;
+  padding: 20px 10%;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+main section p {
+  margin: 25px 0 40px 40px;
+}
+
+main section strong {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+main section a {
+  color: black;
+  background: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 1px 0 0 40px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+
+/* FirstBody */
+
+.firstBody {
+  height: 400px;
+  background: white;
+  color: black;
+  float: left;
+  width: 100%;
+}
+
+.firstBody section {
+  width: 33%;
+  float: left;
+  padding: 100px 50px;
+}
+
+.firstBody h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.firstBody p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(90, 90, 90);
+}
+
+.firstBody i {
+  margin: 0 37%;
+}
+
+
+/* SecondBody */
+
+.secondBody {
+  height: 500px;
+  background: rgb(228, 228, 228);
+  float: left;
+  width: 100%;
+}
+
+.secondBody section {
+  width: 50%;
+  float: left;
+  padding: 50px;
+}
+
+.secondBody h2 {
+  font-size: 5rem;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.secondBody p {
+  width: 90%;
+  font-size: 1.5rem;
+  color: rgb(83, 83, 83);
+  padding: 10px 0 40px 20px;
+  line-height: 30px;
+}
+
+.secondBody a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  margin: 20px 0 0 20px;
+  text-transform: uppercase;
+}
+
+.secondBody section img {
+  width: 480px;
+  height: 340px;
+}
+
+
+/* ThirdBody */
+
+.thirdBody {
+  height: 600px;
+  float: left;
+  width: 100%;
+}
+
+.thirdBody section {
+  float: left;
+  height: 300px;
+  width: 33%;
+  padding: 100px;
+}
+
+.thirdBody section img {
+  height: 350px;
+  width: 235px;
+  background: center / cover no-repeat;
+  float: left;
+  z-index: auto;
+}
+
+.thirdBody section a {
+  float: left;
+  z-index: 1;
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  margin: -20px 0 0 20%;
+  text-transform: uppercase;
+}
+
+
+/* FourthBody */
+
+.fourthBody {
+  height: 500px;
+  padding-top: 50px;
+  float: left;
+  width: 100%;
+}
+
+.fourthBody > section{
+  height: 350px;
+  width: 80%;
+  background: url(../Background1.jpeg) center / cover no-repeat;
+  margin: 50px 0 0 10%;
+}
+
+.fourthBody section section {
+  width: 60%;
+  padding: 70px;
+}
+
+.fourthBody section span {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.fourthBody section h4 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 20px 0 40px 0;
+  line-height: 45px;
+}
+
+.fourthBody section h4 strong {
+  font-weight: 900;
+}
+
+.fourthBody section a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+
+/* FifthBody */
+
+.fifthBody {
+  height: 1400px;
+  padding: 100px;
+  float: left;
+  width: 100%;
+}
+
+.fifthBody h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-weight: 900;
+}
+
+.fifthBody div {
+  float: left;
+  padding: 10px;
+  width: 33.3333%;
+}
+
+.fifthBody div > section {
+  padding: 10px 0;
+}
+
+
+.fifthBody section span {
+  display: block;
+  text-align: center;
+  font-size: 25rem;
+  font-weight: 100;
+  background: black;
+  color: rgb(54, 54, 54);
+  width: 100%;
+  height: 400px;
+}
+
+.fifthBody div:nth-child(2) section:first-of-type img {
+  height: 400px;
+  width: 100%;
+}
+
+.fifthBody div:nth-child(2) section + section img {
+  height: 700px;
+  width: 100%;
+}
+
+.fifthBody div:nth-child(3) img {
+  height: 700px;
+  width: 100%;
+}
+
+.fifthBody div:nth-child(4) section:first-of-type img {
+  height: 400px;
+  width: 100%;
+}
+
+.fifthBody div:nth-child(4) section + section img {
+  height: 700px;
+  width: 100%;
+}
+
+
+
+/* ============
+  MEDIA QUERY
+ =============*/
+
+@media screen and (min-width: 200px) and (max-width:900px) {
+
+  /* Header */
+  header {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header a:last-of-type {
+    display: none;
+  }
+
+  header > i.fa-4x {
+    display: contents;
+    display: block;
+    margin-top: 15px;
+    float: right;
+  }
+
+  /* Main */
+
+  main {
+    background: url(../averie-woodard.jpeg) center / cover no-repeat;
+    height: 1100px;
+    width: 100%;
+  }
+  
+  main h1 {
+    padding: 200px 0 0 5%;
+    font-size: 5rem;
+    letter-spacing: 5px;
+  }
+  
+  main p {
+    font-size: 2rem;
+    margin: 20px 0 35px 5%;
+  }
+
+  main section {
+    margin: 150px 0 0 100px;
+  }
+  
+  /* firstBody */
+
+  .firstBody {
+    height: 1000px;
+    float: left;
+    width: 100%;
+  }
+
+  .firstBody section {
+    width: 100%;
+    margin: 50px 0 100px 0;
+    padding: 0;
+  }
+
+  /* secondBody */
+
+  .secondBody {
+    height: 900px;
+    width: 100%;
+  }
+
+  .secondBody section {
+    width: 100%;
+  }
+
+  .secondBody section img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .secondBody h2 {
+    font-size: 4rem;
+    padding: 20px;
+  }
+
+  /* thirdBody */
+
+  .thirdBody {
+    height: 1400px;
+    width: 100%;
+  }
+
+  .thirdBody section {
+    width: 100%;
+    padding: 200px 0;
+  }
+
+  .thirdBody section a {
+    padding: 15px 30px;
+    margin: -25px 0 0 32%;
+  }
+
+  .thirdBody section img {
+    margin-left: 20%;
+  }
+
+  /* fourthBody */
+
+  .fourthBody section section {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .fourthBody > section {
+    height: 350px;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  /* fifthBody */
+
+  .fifthBody {
+    height: 500px;
+    width: 100%;
+    margin: 150px 10px;
+    padding: 10px 10px;
+  }
+
+  .fifthBody div:nth-child(2) section:first-of-type img {
+    height: 50%;
+    width: 100%;
+  }
+  
+  .fifthBody div:nth-child(2) section + section img {
+    height: 90%;
+    width: 100%;
+  }
+  
+  .fifthBody div:nth-child(3) img {
+    height: 90%;
+    width: 100%;
+  }
+  
+  .fifthBody div:nth-child(4) section:first-of-type img {
+    height: 50%;
+    width: 100%;
+  }
+  
+  .fifthBody div:nth-child(4) section + section img {
+    height: 90%;
+    width: 100%;
+  }
+
+  .fifthBody section span {
+    font-size: 10rem;
+    font-weight: 100;
+    background: black;
+    color: rgb(54, 54, 54);
+    width: 100%;
+    height: 120px;
+  }
+
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

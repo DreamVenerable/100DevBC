@@ -1,0 +1,400 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: rgb(245, 249, 252);
+}
+
+body {
+  width: 100%;
+  background: rgb(245, 249, 252);
+  float: left;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  width: 100%;
+  float: left;
+}
+
+/* Style the navigation menu */
+.topNav {
+  overflow: hidden;
+  background-color: rgb(245, 249, 252);
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topNav #navList {
+  display: none;
+  float: left;
+  padding-left: 2%;
+  width: 95%;
+}
+
+/* Style navigation menu links */
+.topNav a {
+  color: rgb(28, 33, 72);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topNav a.icon {
+  background: rgb(245, 249, 252);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav > a.navBtn {
+  display: none;
+  padding: 10px 20px;
+  background: rgb(28, 33, 72);
+  color: white;
+  font-size: 2rem;
+}
+
+nav {
+  border-bottom: 0.5px solid rgb(28, 33, 72);
+  width: 100%;
+}
+
+.navLogo {
+  width: 60%;
+  float: right;
+  font-weight: 600;
+}
+
+/* topBody */
+
+.topBody {
+  width: 100%;
+  float: left;
+}
+
+span {
+  font-size: 2rem;
+  color: rgb(165, 165, 165);
+  text-transform: uppercase;
+  padding: 20px 0 10px 5px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-left: 13px;
+  margin-top: 15px;
+}
+
+.topBody form {
+  width: 100%;
+  padding: 10px 5% 10px 5%;
+  margin: 10px 0;
+}
+
+.topBody input {
+  width: 92%;
+  padding: 10px 26px;
+  margin: 10px 16px;
+  background-color: rgba(230, 230, 230, 0.75);
+  border: none;
+  height: 50px;
+  font-size: 1.6rem;
+}
+
+.btn {
+  background: rgb(28, 33, 72);
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 12px 37% 10px 37%;
+  margin: 0px 8% 10px 7.4%;
+}
+
+.topBody p {
+  color: rgb(28, 33, 72);
+  font-size: 2.3rem;
+  margin: 35px 16px;
+  width: 95%;
+}
+
+.topBody img {
+  width: 100%;
+}
+
+/* Tiles body */
+
+section.featTiles {
+  margin: 10px 10px 0 10px;
+  float: left;
+}
+
+.featTiles > section {
+  height: 300px;
+}
+
+.featTiles h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.featTiles p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.featTiles section > a {
+  text-decoration: none;
+  color: rgb(28, 33, 72);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 10%;
+}
+
+.featTiles section i {
+  margin-left: 49%;
+}
+
+section i.fa-layer-group {
+  margin-left: 48%;
+}
+
+
+/* endBody */
+
+body section.endBody {
+  height: 250px;
+  background: white;
+  float: left;
+  width: 100%;
+}
+
+.endBody h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgb(28, 33, 72);
+  padding: 30px 0 5px 0;
+  margin: 20px 0 10px 5px;
+}
+
+.endBody p {
+  color: rgb(165, 165, 165);
+  font-size: 1.8rem;
+  padding: 1px 1px;
+  margin: 1px 5px;
+}
+
+
+
+/* MEDIA QUERY! */
+
+@media screen and (min-width: 764px) and (max-width: 1199px) {
+
+  /* NAV */
+  
+  body header nav.topNav a.icon {
+    display: none;
+  }
+
+  .topNav #navList {
+    display: block;
+  }
+
+  header .topNav {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .topNav div a {
+    width: 25%;
+    color: rgb(28, 33, 72);
+    float: left;
+  }
+
+  a.navLogo {
+    width: 70%;
+    float: left;
+  }
+
+  /* BODY */
+
+  section.topBody > section {
+    width: 50%;
+    float: left;
+    padding: 10% 0;
+  }
+
+  section.topBody > section + section {
+    margin-top: 5%;
+  }
+
+
+  /* TILES */
+
+  section.featTiles > section {
+    width: 50%;
+    float: left;
+  }
+
+  section.featTiles > section p {
+    width: 65%;
+    margin: 0 1% 7% 15%;
+  }
+
+  section.featTiles > section a {
+    margin-left: 41%;
+  }
+
+  /* endBODY */
+
+  body section.endBody * {
+    padding-left: 5%;
+    width: 50%;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+
+  html body header nav.topNav a.icon {
+    display: none;
+  }
+
+  nav.topNav #navList {
+    display: block;
+    width: 60%;
+    float: left;
+  }
+
+  header nav.topNav {
+    display: block;
+    float: left;
+    width: 100%;
+    border: none;
+  }
+
+  .topNav div a {
+    width: 25%;
+    color: rgb(28, 33, 72);
+    float: left;
+    font-size: 2.3rem;
+  }
+
+  a.navLogo {
+    width: 29%;
+    float: left;
+  }
+
+   nav > a.navBtn {
+    display: initial;
+  } 
+
+  /* BODY */
+
+
+  section.topBody > section {
+    width: 50%;
+    float: left;
+    padding: 10% 0;
+  }
+
+  section.topBody > section:first-child {
+    padding: 10% 8%;
+  }
+
+  section.topBody > section:first-child p {
+    margin: 135px 16px;
+  }
+
+  section.topBody > section input {
+    width: 80%;
+    float: left;
+  }
+
+  section.topBody > section form {
+    width: 80%;
+    float: left;
+    padding: 1px 0 1px 1px;
+    margin: 0px 0;
+  }
+
+  section.topBody > section .btn {
+    width: 35%;
+    float: left;
+    padding: 15px 0 12px 10%;
+    margin: 11px -90px;
+  }
+
+
+  /* TILES */
+
+  section.featTiles > section {
+    width: 25%;
+    float: left;
+  }
+
+  section.featTiles > section p {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  section.featTiles > section a {
+    margin-left: 35%;
+  }
+
+  .featTiles section i {
+    margin-left: 45%;
+}
+
+
+  .endBody {
+    padding-left: 5%;
+  }
+
+  html body section.endBody * {
+    width: 35%;
+  }
+
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

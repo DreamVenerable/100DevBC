@@ -1,0 +1,317 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: rgb(93, 113, 129);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER */
+
+header {
+  height: 45px;
+  background: rgb(93, 113, 129);
+  color: white;
+  font-size: 0.75rem;
+}
+
+header nav * {
+  float: left;
+  width: 50%;
+  color: white;
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav ul li{
+  margin-top: 2px;
+  width: 16%;
+}
+
+header nav img {
+  height: 40px;
+  width: 40px;
+}
+
+header nav > a {
+  background: white;
+  color: rgb(93, 113, 129);
+  border-radius: 10%;
+  width: auto;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+
+/* mainBODY */
+
+main {
+  color: white;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+main p {
+  width: 50%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-left: 25%;
+}
+
+main h3 {
+  font-size: 1.10rem;
+}
+
+main span {
+  color: rgb(53, 53, 53);
+  font-style: italic;
+}
+
+
+/* sectionBODY */
+
+section {
+  background: white;
+  height: 300px;
+  text-align: center;
+}
+
+section > h2 {
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+section p {
+    width: 50%;
+    font-size: 0.90rem;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+
+/* zebraBODY */
+
+.zebra {
+  background: lightgray;
+  height: 550px;
+}
+
+.zebra > section {
+  float: left;
+  height: 420px;
+  width: 36%;
+  margin: 7%;
+  margin-bottom: 3%;
+  background: lightgray;
+}
+
+.zebra > section > div {
+  height: 125px;
+  width: 215px;
+  background: rgb(93, 113, 129);
+  margin: 5% 25%;
+}
+
+.zebra > section > h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.zebra > section > p {
+  width: 70%;
+  margin: 5% 20% 10% 15%;
+}
+
+.zebra > section > a {
+  height: 105px;
+  width: 215px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 0.90rem;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+
+/* giraffeBODY */
+
+.giraffe {
+  background: white;
+  height: 400px;
+  margin-top: -20px;
+}
+
+section.giraffe h2 {
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 5px
+}
+
+section.giraffe p {
+    width: 50%;
+    font-size: 0.90rem;
+    margin-left: 25%;
+    margin-top: 5px;
+    padding: 1.5% 10%;
+}
+
+section.giraffe > a {
+  height: 105px;
+  width: 215px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 0.90rem;
+  text-transform: uppercase;
+}
+
+
+/* FOOTER */
+
+footer {
+  height: 200px;
+  background: rgb(23, 23, 45);
+}
+
+
+.social-container  {
+	height: 40px;
+	width: 120px;
+  margin-left: 20px;
+} 
+
+div.social-container a {
+  color: white;
+  width: 30%;
+  padding: 15px 0;
+}
+
+.fab {
+  width: 32%;
+  padding: 14px;
+}
+
+aside.croc {
+  width: 20%;
+  color: white;
+  height: 150px;
+  margin: 0 20px;
+  float: left;
+}
+
+.croc span {
+  color: grey;
+  font-size: 0.8rem;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+
+.croc ul *{
+  font-size: 0.75rem;
+  list-style: none;
+  width: 25%;
+  color: white;
+  display: block;
+  float: left;
+}
+
+.croc a {
+  color: white;
+  text-decoration: none;
+  width: 100%
+}
+
+.croc li {
+  padding-bottom: 10px;
+}
+
+aside.alligator {
+  width: 20%;
+  color: white;
+  height: 150px;
+  float: right;
+}
+
+address *{
+  text-decoration: none;
+  color: white;
+}
+
+.alligator {
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+address {
+  margin-top: 15px;
+}
+
+address p {
+  color: gray;
+  margin-bottom: 0;
+}
+
+address a.cellNumber {
+  color: grey;
+}
+
+footer > div {
+  color: white;
+  float: left;
+  width: 90%;
+  padding: 10px;
+  height: 50px;
+  border-top: 1px solid white;
+  margin-left: 50px;
+}
+
+footer div small {
+  font-size: 0.6rem;
+}
+
+footer div img {
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

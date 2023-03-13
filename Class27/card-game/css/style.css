@@ -1,0 +1,61 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+
+html{
+  color: white;
+  background-color: black;
+}
+
+h1, h2, h3{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  color: teal;
+}
+
+h3#result{
+  /* font-size: 25px;
+  font-weight: bolder; */
+  color: red;
+}
+
+button{
+  padding: 5px 2px;
+  background-color: white;
+  border: none;
+}
+
+button:hover{
+  background-color: aquamarine;
+}
+
+button:active{
+  background-color: rgb(28, 78, 61);
+}
+
+div{
+  display: flex;
+  justify-content: center;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
